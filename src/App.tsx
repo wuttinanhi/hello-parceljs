@@ -1,17 +1,10 @@
-import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Routing } from "./Routing";
 
 export function App() {
-  const [count, setCount] = useState(0);
-
-  const increment = () => setCount(count + 1);
-
   return (
-    <>
-      <h1>Hello world! zzz</h1>
-      <h2>{count}</h2>
-      <button type="button" onClick={increment}>
-        Increase
-      </button>
-    </>
+    <BrowserRouter>
+      <Routing />
+    </BrowserRouter>
   );
 }

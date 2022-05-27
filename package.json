@@ -14,12 +14,15 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build",
-    "lint": "eslint"
+    "lint": "eslint",
+    "start": "serve ./dist --single"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "source": "src/index.html",
   "dependencies": {
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
+    "serve": "^13.0.2"
   }
 }
